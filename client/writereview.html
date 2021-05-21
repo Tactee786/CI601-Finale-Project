@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- HTML5 doctype declaration -->
+<html lang="en"><!-- default language of the document content -->
+<head>
+<meta charset=UTF-8>
+		<title>Write you Review</title><!-- web page title -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+		<link rel="stylesheet" type="text/css" href="CSS/writeReviewCSS.css">
+		<script src="JavaScript/mainJS1.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="indexCSS">
+</head>
+
+<body>
+<!-- Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<a id="#top"></a>
+	<!-- The 'wrapper' contains all the page content -->
+    <header class="banner center grid-container1"><!-- The main heading for the page -->
+    	<p><a href="mainpage.html" class="item1 grid-item1"> <img src="Images/logo2.png" width="100" height="100"></a></p> <!-- logo link to main page -->
+		<h1 class="webpage item2 grid-item1">Game Reviews By Gamers For Gamers</h1><!-- title for when website sized -->
+		<h1 class="mobile item2 grid-item1">Trusty Reviews</h1><!-- title for mobile sized -->
+		<a href="loginpage.html" class="item3 grid-item1">Login/Sign up</a> <!-- login link -->
+	</header>
+
+	<nav class="menu"><!--The primary navigation for the website -->
+		<ul class="nav1"> <!--different page navigation-->
+			<li class=""><a class="" href="mainpage.html">Home</a></li>
+			<li class=""><a class="this" href="writereview.html">Write</a></li>
+			<li class=""><a class="" href="contact.html">Contact Us</a></li>
+            <li class=""><a class="" href="account.html">Account</a></li>
+		</ul>
+	</nav>
+
+    <main><!-- The main page content -->
+
+    	<div id="pageTitle">
+    		<h1 class="center">Write Review</h1>
+    	</div>
+
+		<!-- this div is used for the form where the user can input data to make a review to be uploaded to the database via the review API I have created -->
+		<div id="writenReview" class="">
+        <form  id="writenReviewForm" >
+        <fieldset id="writenReviewField" class="center">
+        	<div class="block">
+        		<label for="username">Username: </label>
+				<input type="text" id="username" name="username" placeholder="Username..."class="">
+        	</div>
+        	
+        	<div class="block margin">
+        		<label for="reviewTitle">Review Title: </label>
+				<input type="text" id="reviewTitle" name="reviewTitle" placeholder="Review Title..." class="">
+        	</div>
+
+			<div class="block margin">
+				<label for="platform">Platform: </label>
+				<select id="platform" name="platform">
+					<option value="PC">PC</option>
+					<option value="PSN">PSN</option>
+					<option value="XBOX">XBOX</option>
+					<option value="Switch">Switch</option>
+					<option value="Mobile">Mobile</option>
+					<option value="Other">Other</option>
+				</select>
+
+				<label for="gameTitle">Game Title: </label>
+				<!-- add more -->
+				<select id="gameTitle" name="gameTitle">
+					<option value="Rocket League">Rocket League</option>
+					<option value="CS:GO">CS:GO</option>
+					<option value="Valorant">Valorant</option>
+					<option value="League of Ledgends">League of Ledgends</option>
+					<option value="Cod:Warzone">Cod:Warzone</option>
+					<option value="Cyberpunk 2077">Cyberpunk 2077</option>
+					<option value="OSU!">OSU!</option>
+					<option value="ANNO 1800">ANNO 1800</option>
+					<option value="Minecraft">Minecraft</option>
+					<option value="Among Us">Among Us</option>
+					<option value="Grand Theft Auto V">Grand Theft Auto V</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			
+			<div class="block margin">
+				<label for="rating">Rating (0-10): </label>
+				<input type="range" id="rating" name="rating" min="0" max="10" value="0" class="">
+			</div>
+			
+			<div class="block margin">
+				<label for="difficulty">Difficulty (0-10): </label>
+				<input type="range" id="difficulty" name="difficulty" min="0" max="10" value="0" class="">
+			</div>
+			
+			<div class="block margin">
+				<label for="hoursPlayed">Hours Played: </label>
+				<input type="number" id="hoursPlayed" name="hoursPlayed" min="1" max="2147483646" class="">
+			</div>
+
+			<label for="recommend">Recommend: </label>
+			<select id="recommend" name="recommend">
+				<option value="Recommend">Recommend</option>
+				<option value="Not Recommend">Not Recommend</option>
+			</select>
+
+			<div class="block margin">
+				<input type="checkbox" id="FPS" name="FPS" value="FPS">
+  				<label for="FPS">FPS</label>
+  				<input type="checkbox" id="Shooter" name="Shooter" value="Shooter">
+  				<label for="Shooter">Shooter</label>
+  				<input type="checkbox" id="Multiplayer" name="Multiplayer" value="Multiplayer">
+  				<label for="Multiplayer">Multiplayer</label>
+  				<input type="checkbox" id="Singleplayer" name="Singleplayer" value="Singleplayer">
+  				<label for="Singleplayer">Singleplayer</label>
+  				<input type="checkbox" id="Action" name="Action" value="Action">
+  				<label for="Action">Action</label>
+  				<input type="checkbox" id="First-Person" name="First-Person" value="First-Person">
+  				<label for="First-Person">First-Person</label>
+  				<input type="checkbox" id="Third Person" name="Third Person" value="Third Person">
+  				<label for="Third Person">Third Person</label>
+  				<input type="checkbox" id="Free to Play" name="Free to Play" value="Free to Play">
+  				<label for="Free to Play">Free to Play</label>
+  				<input type="checkbox" id="Racing" name="Racing" value="Racing">
+  				<label for="Racing">Racing</label>
+  				<input type="checkbox" id="Competitive" name="Competitive" value="Competitive">
+  				<label for="Competitive">Competitive</label>
+  				<input type="checkbox" id="Music" name="Music" value="Music">
+  				<label for="Music">Music</label>
+  				<input type="checkbox" id="Simulation" name="Simulation" value="Simulation">
+  				<label for="Simulation">Simulation</label>
+  				<input type="checkbox" id="Sports" name="Sports" value="Sports">
+  				<label for="Sports">Sports</label>
+  				<input type="checkbox" id="Strategy" name="Strategy" value="Strategy">
+  				<label for="Strategy">Strategy</label>
+  				<input type="checkbox" id="Open World" name="Open World" value="Open World">
+  				<label for="Open World">Open World</label>
+			</div>
+			
+			<div class="block margin">
+				<label for="summary">Summary: </label>
+				<input type="text" id="summary" name="summary" placeholder="Summary of your review..." class="">
+			</div>
+			
+			<div class="block margin">
+				<label for="review">Review: </label>
+				<input type="text" id="review" name="review" placeholder="Full review..." class="">
+			</div>
+		
+			<button type="submit" id="writenReviewSend" form="writenReviewForm" class="inBlock"> Send Review </button>
+			
+		</fieldset>
+		</form>    	
+		</div>
+
+		<!-- this div is used to display the loading gif for after you hit the search button or send button and are awaiting results from the API-->
+		<div id="loading" class="hide center">
+			<h2>Loading</h2>
+			<img src="https://ob273.brighton.domains/ci609/assignment1/client/Images/loadingGif.gif" alt="loading animation">
+		</div>
+
+		<!-- this is used to show a title when the upload to the database is successful -->
+		<header id="sendResults" class="hide">
+			<h3 class="center">Your Review has been successfully uplaoded.</h3>
+		</header>
+    
+    </main><!-- Close main page content -->  
+
+    <!-- Footer content, used to have a link to the top of the webpage for mobile and anyone who wants to use it -->
+	<footer>
+		<p><a href="#top">Go to top </a></p>
+		<p>Email:<a href="mailto:E.S.ob273@brighton.ac.uk">Omar Butt</a></p>
+		<small>© 2020, Omar Butt</small>
+	</footer>
+
+	</div><!-- Close 'wrapper' div -->
+
+
+</body><!-- Close 'body' -->
+</html><!-- Close 'html' -->

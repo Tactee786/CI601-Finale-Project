@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- HTML5 doctype declaration -->
+<html lang="en"><!-- default language of the document content -->
+<head>
+<meta charset=UTF-8>
+		<title>Trusty Reviews</title><!-- web page title -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+		<link rel="stylesheet" type="text/css" href="CSS/mainCSS.css">
+		<script src="JavaScript/mainJS.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="indexCSS">
+</head>
+
+<body>
+<!-- Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<a id="#top"></a>
+	<!-- The 'wrapper' contains all the page content -->
+    <header class="banner center grid-container1"><!-- The main heading for the page -->
+    	<p><a href="mainpage.html" class="item1 grid-item1"> <img src="Images/logo2.png" width="100" height="100"></a></p> <!-- logo link to main page -->
+		<h1 class="webpage item2 grid-item1">Game Reviews By Gamers For Gamers</h1><!-- title for when website sized -->
+		<h1 class="mobile item2 grid-item1">Trusty Reviews</h1><!-- title for mobile sized -->
+		<a href="loginpage.html" class="item3 grid-item1">Login/Sign up</a> <!-- login link -->
+	</header>
+
+	<nav class="menu"><!--The primary navigation for the website -->
+		<ul class="nav1"> <!--different page navigation-->
+			<li class=""><a class="this" href="mainpage.html">Home</a></li>
+			<li class=""><a class="" href="writereview.html">Write</a></li>
+			<li class=""><a class="" href="contact.html">Contact Us</a></li>
+            <li class=""><a class="" href="account.html">Account</a></li>
+		</ul>
+	</nav>
+
+    <main><!-- The main page content -->
+    	<!-- This div shows the hot games to the user on the main page -->
+    	<div id="hotGames" class="grid-container11 center">
+    		<div id="game_1" class=".grid-item12 item11 gallery">
+    			<img src="Images/rocketleague.png" alt="Game 1" class="imgspec1 center" width="140" height="200">
+    		</div>
+    		<div id="game_2" class=".grid-item12 item12 gallery">
+    			<img src="Images/amongus.png" alt="Game 2" class="imgspec1 center" width="140" height="200">
+    		</div>
+    		<div id="game_3" class=".grid-item12 item13 gallery">
+    			<img src="Images/csgo.png" alt="Game 3" class="imgspec1 center" width="140" height="200">
+    		</div>
+    		<div id="game_4" class=".grid-item12 item14 gallery">
+    			<img src="Images/gtav.png" alt="Game 4" class="imgspec1 center" width="140" height="200">
+    		</div>
+    		<div id="game_5" class=".grid-item12 item15 gallery">
+    			<img src="Images/golfwithfriends.png" alt="Game 5" class="imgspec1 center" width="140" height="200">
+    		</div>
+    	</div>
+    	<!-- this div shows the latest reviews that have been made when the user visits the page on the main page -->
+    	<div id="latestReviews">
+            <h2 class="center">Latest Review</h2>
+    		<div id="review_1" class="grid-container21">
+    			<div id="reviewImg" class="grid-item21 item21 gallery">
+                    <img src="Images/rocketleague.png" alt="Game 1" class="imgspec" width="70" height="100">
+    			</div>
+    			<div id="reviewTitle" class="grid-item21 item22">
+    				<p>Title: Best Game Ever Made</p>
+    			</div>
+    			<div id="reviewSummery"class="grid-item21 item23">
+    				<p>Summery: This is a game that is the player controlling a car that they use to play a game of football, can be played online with friends or solo.</p>
+    			</div>
+    			<div id="reviewHoursPlayed" class="grid-item21 item24">
+    				<p>Hours played: 515</p>
+    			</div>
+    			<div id="reviewDifficulty" class="grid-item21 item25">
+    				<p>Difficulty: 7/10</p>
+    			</div>
+    		</div>
+    	</div>
+
+
+		<!-- this div is used for the form were the user can type in what they would like to search for from the recipe API/database-->
+		<div id="searchReview">
+        <form  id="searchReviewForm" class="">
+        <fieldset class="center ">
+			<input type="text" id="search" placeholder="Search Reviews..." class="inBlock">
+			<button type="submit" id="searchReviewButton" form="searchReviewForm" class="inBlock"></button>
+		</fieldset>
+		</form>    	
+		</div>
+
+		<!-- this is used to show a title when the results are shown-->
+		<header id="searchReviewResults1" class="hide">
+            <h2 class="center">Search Results</h2>
+            <div id="searchReviewResults">
+                
+            </div>
+            <!-- this is for the user to add comments to reviews he/she is reading -->
+            <div id="commentDiv" class="hide">
+                <form id="commentForm">
+                    <label for="reviewID"></label>
+                    <input type="text" id="reviewID" name="reviewID" ><label for="username"></label>
+                    <input type="text" id="username" name="username">
+                    <label for="comment"></label>
+                    <input type="text" id="comment" name="comment">
+                    <button type="submit" id="sendComments0">Send Comment</button>
+                </form>
+            </div>
+
+		</header>
+
+		<!-- this div is used to display the loading gif for after you hit the search button or send button and are awaiting results from the API/Sever-->
+		<div id="loading" class="hide center">
+			<h2>Loading</h2>
+			<img src="https://ob273.brighton.domains/ci609/assignment1/client/Images/loadingGif.gif" alt="loading animation">
+		</div>
+        <!-- this is to isolate a review and let the user read the whole review -->
+        <div id="choosenResult" class="center">
+            
+        </div>
+    
+    </main><!-- Close main page content -->  
+
+    <!-- Footer content, used to have a link to the top of the webpage for mobile and anyone who wants to use it -->
+	<footer class="footerpads">
+		<p><a href="#top">Go to top </a></p>
+		<p>Email:<a href="mailto:E.S.ob273@brighton.ac.uk">Omar Butt</a></p>
+		<small>© 2021, Omar Butt</small>
+	</footer>
+
+	</div><!-- Close 'wrapper' div -->
+
+
+</body><!-- Close 'body' -->
+</html><!-- Close 'html' -->

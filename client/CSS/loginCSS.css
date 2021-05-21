@@ -1,0 +1,425 @@
+#wrapper {
+	display: block;
+	max-width: 90%;
+	height: auto;
+  	margin: auto;
+  	padding: 5%;
+  	color: #000000;
+  	background-color: #fffff8;
+  	font-family: 'Source Code Pro', monospace;
+}
+/*allows the set attribute to the body of the page*/
+body {
+	display: block;
+	background-color: #000000;
+	/*background-image: url("https://ob273.brighton.domains/ci609/assignment1/client/Images/backgroundImageCustom.jpg");*/
+	/*background-image: url("S:/OneDrive - University of Brighton/Uni/3.Third Year/CI 601 SEM 1&2/Assessment/test/Images/BIC.jpg");*/
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+	font-size: 100%;
+	margin: 30px;
+	width: auto;
+	height: auto;
+	font-family: 'Source Code Pro', monospace;
+}
+/*h1 tag properties*/
+h1 {
+	color: #000000;
+}
+/*set properties for the fieldset element*/
+fieldset {
+	width: 65%;
+	display: block;
+	padding: 1%;
+	margin: auto;
+	border: 2px solid #ff393908;
+	border-radius: 10px;
+	/*border: none;*/
+}
+/*allows the set attribute to the input element*/
+ input[type=text] {
+ 	box-sizing: border-box;
+ 	border: 3px solid #000;
+ 	border-radius: 10px;
+ 	width: 60%;
+ 	max-width: 500px;
+ 	padding: 12px;
+  	margin: 10px ;
+  	/*background-image: url("S:/OneDrive - University of Brighton/Uni/3.Third Year/CI 601 SEM 1&2/Assessment/test/Images/si132.png");*/
+  	background-position: 5px 5px;
+  	background-repeat: no-repeat;
+ }
+ /*used for elements or divs to be hidden or shown*/
+.hide {
+	display: none;
+}
+/*add margin to input field*/
+.pwmargin {
+	margin: 5px;
+}
+.footerpads {
+	padding-top: 5em;
+}
+/*to be able to center the appropriate content */
+.center {
+	text-align: center;
+	align-content: center;
+}
+.block {
+	display: block;
+}
+.floatR {
+	float: right;
+}
+/*make the title larger*/
+.banner{
+
+}
+.clearfix {
+	overflow: auto;
+}
+/*to style the search button thats next to the search bar a with effects 
+and the image thats inside*/
+#searchReviewButton {
+  	width: 11%;
+  	max-width: 100px;
+  	height: 3.3em;
+  	padding: 8px;
+  	background: transparent;
+  	color: white;
+  	margin: 10px;
+  	float: right;
+  	border-radius: 15px;
+ 	cursor: pointer;
+ 	background-image: url("https://ob273.brighton.domains/CI601Project/client/Images/si164.png");
+ 	background-size: 100% 95%;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ }
+ #searchReview {
+ 	padding: 20px 0px 0px 0px;
+ }
+ /*made to style information thats dynamically made by the JS*/
+ .looks {
+
+ }
+ .looks p{
+	color: #000000;
+	border-radius: 5px;
+	height: auto;
+	padding-left: 2em;
+	padding-right: 2em; 
+}
+ /*give certain content inline-block*/
+.inBlock{
+	display: inline-block;
+}
+	max-width: 100%;
+}
+/*making the links in the website styled*/
+a:link{ /*these are needed for the hyper-link staying the same color */
+	color: #002f31;
+}
+a:visited{
+	color: #002f31;
+}
+a:hover{
+	color: #002f31;
+}
+a:active{
+	color: #002f31;
+}
+/*this is the navigation for desktop*/
+.nav1{/*used to give spacing for the tabs*//*feeder is only for navigation tabs*/
+	text-align: center;
+	padding: 0; /*had to add this because user agent stylesheet was styling for some reason*/
+	border-bottom: 2px solid #116466;
+	font: bolder 2rem 'Source Code Pro', monospace;
+}
+.nav1 li{
+	list-style: none;
+	margin: auto; 
+	display: inline;
+}
+.nav1 li a{
+	padding: 7px 7px 0px 7px;
+	border: 2px solid #00f9ff;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: none;
+	background-color: #0084CC;
+	text-decoration: none;
+}
+.nav1 li a:link {
+	color: #2C3531; 
+}
+.nav1 li a:visited { 
+	color: #2C3531; 
+}
+.nav1 li a:hover{
+	color: #2C3531;
+	background-color: #45fff0;
+	border-color: #116466;
+}
+.nav1 li a.this {
+	background-color: #45fff0;
+	border-color: #116466;
+}
+/*this is so the top logo, title and login shown horizontally via a grid*/
+.item1 {
+	grid-area: logo;
+	height: 1em;
+}
+.item2 {
+	grid-area: header;
+	font-size: 220%;
+}
+.item3 {
+	grid-area: login;
+	height: 1em;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-areas:
+    'logo header header header header login'
+    'logo header header header header login';
+  grid-gap: 10px;
+}
+.grid-item1 {
+  text-align: center;
+  padding: 20px;
+}
+/*restrict the size for the game images*/
+.gallery {
+	max-width: 140px;
+	text-align: center;
+  	align-content: center;
+}
+.imgspec {
+	width: 100%;
+	height: auto;
+}
+ /*these are to set the appropriate divs to the grid layout*/
+.banner {
+	grid-area: banner;
+}
+.menu {
+	grid-area: menu;
+}
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+}
+/*this media query for mobile */
+@media (min-width: 10em) {
+	body {
+	}
+	#wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"banner"
+			"menu"
+			"main"
+			"footer";
+	}
+	/*this allows the corect title to be shown depending on the screen 
+	size that is being used*/
+	.webpage{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+	/*allow the search bar and button to be diffrent widths for 
+	diffrent screen sizes*/
+	#search {
+	width: 75%;
+	}	
+	#searchReview {
+	margin: auto;
+	width: 90%;
+	}
+	#searchReviewButton {
+		width: 15%;
+		background-size: 90% 90%;
+		margin: 0px;
+	}
+	#searchReviewForm fieldset{
+		width: 95%;
+	}
+	main {
+		max-width: 95%;
+	}
+	.nav1 {
+		border-bottom: none;
+	}
+}
+/*this media query for small webpages or/and ipad or tablets */
+@media (min-width: 26.6em) {
+	body {
+	}
+  	#wrapper { 
+  	justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      	"banner banner"
+		"menu menu"
+		"main main"
+		"footer footer";
+  	}
+  	/*this allows the corect title to be shown depending on the screen 
+	size that is being used*/
+  	.webpage{
+		display: none;
+	}
+  	.mobile{
+  		display: block; 
+  	}
+  	/*allow the search bar and button to be diffrent widths for 
+	diffrent screen sizes*/
+  	#searchReviewButton{
+   		width: 15%;
+		background-size: 90% 90%;
+	}
+	#search {
+	width: 70%;
+	}
+	#searchReview{
+	margin: auto;
+	width: 80%;
+	}
+	#searchReviewForm fieldset{
+		width: 95%;
+	}
+	.nav1 {
+		border-bottom: none;
+	}
+}
+/*this media query for small to medium webpages */
+@media (min-width: 44em) {
+	body {
+	}	
+  	#wrapper {
+  	justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "banner  banner  banner"
+      "menu menu menu"
+      "main  main  main"
+      "footer  footer  footer";
+   	}
+	/*this allows the corect title to be shown depending on the screen 
+	size that is being used*/
+   	.webpage{
+		display: block;
+	}
+   	.mobile{
+   		display: none; 
+   	}
+   	/*allow the search bar and button to be diffrent widths for 
+	diffrent screen sizes*/
+   	#search {
+	width: 75%;
+	}
+   	#searchReviewButton{
+   		width: 13%;
+		background-size: 90% 90%;
+	}
+	#searchReview{
+	margin: auto;
+	width: 70%;
+	}
+	#searchReviewForm fieldset{
+		width: 85%;
+	}
+	/*this is for the spacing at this resolution */
+	.looks{
+		margin: 15px;
+	}
+}
+/*this media query for medium to full webpages */
+@media (min-width: 60em) {
+	body {
+	}	
+  	#wrapper {
+  	justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "banner  banner  banner  banner"
+      "menu menu menu menu"
+      "main  main  main  main"
+      "footer  footer  footer  footer";
+   	}
+	/*this allows the corect title to be shown depending on the screen 
+	size that is being used*/
+   	.webpage{
+		display: block;
+	}
+   	.mobile{
+   		display: none; 
+   	}
+   	/*allow the search bar and button to be diffrent widths for 
+	diffrent screen sizes*/
+   	#search {
+	width: 75%;
+	}
+   	#searchReviewButton{
+   		width: 13%;
+		background-size: 70% 90%;
+	}
+	#searchReview{
+	margin: auto;
+	width: 70%;
+	}
+	#searchReviewForm fieldset{
+		width: 65%;
+	}
+	/*this is for the spacing at this resolution */
+	.looks{
+		margin: 45px;
+	}
+}
+/*this media query for full webpages */
+@media (min-width: 75em) {
+	body {
+	}
+  	#wrapper {
+  	justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "banner  banner  banner  banner"
+      "menu menu menu menu"
+      "main  main  main  main"
+      "footer  footer  footer  footer";
+   	}
+   	/*this allows the corect title to be shown depending on the screen 
+	size that is being used*/
+   	.webpage{
+		display: block;
+	}
+   	.mobile{
+   		display: none; 
+   	}
+   	/*allow the search bar and button to be diffrent widths for 
+	diffrent screen sizes*/
+   	#search {
+	width: 78%;
+	}
+   	#searchReviewButton{
+   		width: 10%;
+		background-size: 70% 90%;
+	}
+	#searchReview{
+	margin: auto;
+	width: 70%;
+	}
+	#searchReviewForm fieldset{
+		width: 65%;
+	}
+	/*this is for the spacing at this resolution */
+	.looks{
+		margin: 45px;
+	}

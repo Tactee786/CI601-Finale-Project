@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- HTML5 doctype declaration -->
+<html lang="en"><!-- default language of the document content -->
+<head>
+<meta charset=UTF-8>
+		<title>Contact Us</title><!-- web page title -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+		<link rel="stylesheet" type="text/css" href="CSS/contactCSS.css">
+		<script src="JavaScript/mainJS.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="indexCSS">
+</head>
+
+<body>
+<!-- Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<a id="#top"></a>
+	<!-- The 'wrapper' contains all the page content -->
+    <header class="banner center grid-container1"><!-- The main heading for the page -->
+    	<p><a href="mainpage.html" class="item1 grid-item1"> <img src="Images/logo2.png" width="100" height="100"></a></p> <!-- logo link to main page -->
+		<h1 class="webpage item2 grid-item1">Game Reviews By Gamers For Gamers</h1><!-- title for when website sized -->
+		<h1 class="mobile item2 grid-item1">Trusty Reviews</h1><!-- title for mobile sized -->
+		<a href="loginpage.html" class="item3 grid-item1">Login/Sign up</a> <!-- login link -->
+	</header>
+
+	<nav class="menu"><!--The primary navigation for the website -->
+		<ul class="nav1"> <!--different page navigation-->
+			<li class=""><a class="" href="mainpage.html">Home</a></li>
+			<li class=""><a class="" href="writereview.html">Write</a></li>
+			<li class=""><a class="this" href="contact.html">Contact Us</a></li>
+            <li class=""><a class="" href="account.html">Account</a></li>
+		</ul>
+	</nav>
+
+    <main><!-- The main page content -->
+    	<!-- title to show users what this page is about -->
+    	<div id="pageTitle" class="contactTitleStyle center">
+    		<h1>Contacting Game Reviewers</h1>
+    	</div>
+    	<!-- giving information to readers and others -->
+    	<div class="contactStyle center">
+    		<p>At trusty reviews our work hours are very flexible as we have around the clock support for our users and visiting guests looking for help or other necessary information.</p>
+    		<p>If you need to contact us for business or sponsers, our business email is as follows : TechSupport@helpyouneed.co.uk</p>
+    		<h3>Basic FAQ for the users to get simple answers out of the way</h3>
+    		<h4>Why can’t I post any reviews?</h4>
+    		<p>
+			If you are wanting to add reviews to our website, you will first have to make an account, then you will be able to post reviews on our website.</p>
+			<h4>Its not uploading my review?</h4>
+			<p>
+			We may be having trouble with our servers due to maintenance or an overload of users, please be patient and try again later. If the problem persists then please contact us for more assistance.</p>
+			<h4>I cannot seem to log into my account.</h4>
+			<p>
+			As of writing we are having issues with logins and functionality around that, we understand your frustration, but I hope you can bear with us while we work on getting it fixed. Thank you.</p>
+			<p>More functionality will be added shortly as our developer team is working hard to make this a great site for its users.</p>
+    		<p>For additional help fill out the form below.</p>
+    	</div>
+		<!-- this div is used for the form were the user can type in what they would like to talk to the developers about issues or improvments-->
+		<div id="contactArea">
+        <form  id="contactForm">
+        <fieldset class="center">
+        	<div class="block margin">
+        		<label for="name">Name: </label>
+				<input type="text" id="name" name="name" class="inBlock"><br>
+        	</div>
+
+        	<div class="block margin">
+        		<label for="email">Email Address: </label>
+				<input type="email" id="email" name="email" class="inBlock"><br>
+        	</div>
+			
+        	<div class="block margin">
+        		<label for="subject">Subject/Topic: </label>
+				<!-- add more reasons -->
+				<select id="subject" name="subject" class="inBlock">
+					<option value="null">- Select One -</option>
+					<option value="site feedback">I have site feedback</option>
+					<option value="report mistake">I'd like to report a mistake</option>
+					<option value="report user">I'd like to report a user</option>
+					<option value="report username">I'd like to report a username</option>
+					<option value="other">Other</option>
+				</select><br>
+        	</div>
+			
+        	<div class="block margin">
+        		<label for="message">Message: </label>
+				<input type="text" id="message" name="message" class="inBlock"><br>
+        	</div>
+			
+			<button type="submit" id="contactButton" form="contactForm" class="inBlock">Send Message</button>
+
+		</fieldset>
+		<!-- span used to show error message to when the input field is empty-->
+		<p class="center"><span id="search_error" class="hint hide">Must have 1 or more letter in the search bar to continue.</span></p>
+		</form>    	
+		</div>
+		
+		<!-- this div is used to display the loading gif for after you hit the search button or send button and are awaiting results from the API-->
+		<div id="loading" class="hide center">
+			<h2>Loading</h2>
+			<img src="https://ob273.brighton.domains/ci609/assignment1/client/Images/loadingGif.gif" alt="loading animation">
+		</div>
+
+		<!-- this is used to show if the contact form has been successful or not -->
+		<header id="contactResults" class="hide">
+			<h3 class="center">Your message has been sent.</h3>
+			<h3 class="center">Your message has not been sent.</h3>
+		</header>
+
+    
+    </main><!-- Close main page content -->  
+
+    <!-- Footer content, used to have a link to the top of the webpage for mobile and anyone who wants to use it -->
+	<footer>
+		<p><a href="#top">Go to top </a></p>
+		<p>Email:<a href="mailto:E.S.ob273@brighton.ac.uk">Omar Butt</a></p>
+		<small>© 2020, Omar Butt</small>
+	</footer>
+
+	</div><!-- Close 'wrapper' div -->
+
+
+</body><!-- Close 'body' -->
+</html><!-- Close 'html' -->
